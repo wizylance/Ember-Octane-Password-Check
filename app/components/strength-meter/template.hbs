@@ -1,8 +1,8 @@
 <div class="strenght-meter">
   {{#each this.strongMeterResult key="@index" as |strongMeter|}}
-  <div class="col s2">
-    <div class='meter {{strongMeter}}'></div>
-  </div>
+    <div class="col s2">
+      <div class="meter {{strongMeter}}" />
+    </div>
   {{/each}}
   <p id="status-text-strength-meter">{{this.statusTextResult}}</p>
 </div>
