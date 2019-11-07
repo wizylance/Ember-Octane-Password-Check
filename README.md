@@ -48,10 +48,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+### Demo
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+https://media.giphy.com/media/gkM5dm2lmuFYKXZVWb/giphy.gif
+
+### Notes
+
+At the moment, this project haved used Octane / Glimmer with EmberJS. In the integration test, Glimmer / Octane have some disadvantages and throw a lot of errors so I have used the EmberJS native testing toolkit.
