@@ -1,0 +1,22 @@
+.strenght-meter {
+  .col {
+    padding: 0 2px;
+    .weak {
+      background-color: $noviOrange;
+    }
+    .medium {
+      background-color: map-get($yellow, 'lighten-1');
+    }
+    .strong {
+      background-color: map-get($green, 'accent-3');
+    }
+    .default {
+      background-color: map-get($grey, 'lighten-2');
+    }
+    .meter {
+      height: 5px;
+      padding: 5px;
+      margin-top: 5px;
+    }
+  }
+}

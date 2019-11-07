@@ -1,0 +1,32 @@
+<div class="materialize-me">
+  <div class="container register">
+    <div class="center-align register-logo"></div>
+    <div class="row">
+      <form class="col push-4 s12">
+        <div class="row">
+          <div class="input-field col s12 center-align">
+            <Input @value={{this.passwordText}} type="{{if showPassword "text" "password"}}" @input={{action 'valChange'}} class="validate"
+              id="password" />
+            <label for="password">Password</label>
+            <label onclick={{action "showPasswordClick"}} class="right label-icon show-password" for="password"><i
+                class="fas {{if showPassword "fa-eye-slash" "fa-eye"}}"></i></label>
+            <StrengthMeter @passwordStrength={{this.passwordStrength}} />
+          </div>
+          <div class="col s12 right-align">
+            <button disabled={{disabledButton}} class="waves-effect waves-light btn">Submit</button>
+          </div>
+          <div class="input-field col s12 center-align">
+            <span class="helper-text left-align" data-error="wrong" data-success="right">Strong passwords must
+              contain:</span>
+            <ul class="note-password">
+              <li class="helper-text left-align">Uppercase letter (A-Z)</li>
+              <li class="helper-text left-align">Lowercase letter (a-z)</li>
+              <li class="helper-text left-align">Digit (0-9)</li>
+              <li class="helper-text left-align">Special character (~`!@#$%^&*()+=_-{}[]\|:;”’?/<>,.)</li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

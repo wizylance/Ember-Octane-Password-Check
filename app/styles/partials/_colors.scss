@@ -1,0 +1,57 @@
+
+// Main color
+$noviBlue: #39B0BB;
+// Primary colors
+$darkBlue: #00818D;
+$orange: #E67C7A;
+$green: #69A677;
+$red: #BC344E;
+$darkGray: #878888;
+$lightGray: rgba(222, 222, 222, 0.288);
+
+$lightNoviBlue: #0889a5;
+$lighterNoviBlue: #39b0bb;
+$noviOrange: #e64e25; // Deprecated
+$noviOrangeLight: #e67c7a;
+$greybase: #9a9a9a;
+$lightGrey: #fdfdfd;
+$blackish: #2c2c2c;
+$footerColor: #fff;
+$mainColor: $noviBlue;
+$secondaryColor: $noviOrange;
+
+// Variations
+
+@function color-variant($color, $percentage) {
+	@return scale-color($color, $lightness: 100% - $percentage);
+}
+
+// Text classes
+
+.text--blue {
+	color: $noviBlue;
+}
+.text--dark-blue {
+	color: $darkBlue;
+}
+.text--orange {
+	color: $orange;
+}
+.text--green {
+	color: $green;
+}
+.text--red {
+	color: $red;
+}
+.text--dark-gray {
+	color: $darkGray;
+}
+.text--light-gray {
+	color: $lightGray;
+}
+.text--white {
+	color: white;
+}
+.text--black {
+	color: black;
+}
