@@ -50,7 +50,7 @@ Specify what it takes to deploy your app.
 
 ### Demo
 
-https://media.giphy.com/media/gkM5dm2lmuFYKXZVWb/giphy.gif
+![Alt Text](https://media.giphy.com/media/gkM5dm2lmuFYKXZVWb/giphy.gif)
 
 ### Notes
 
