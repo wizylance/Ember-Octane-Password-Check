@@ -18,8 +18,9 @@ module('Integration | Components | strength-meter', function(hooks) {
       'Strong',
       'initial text is Strong'
     );
+    assert.equal(this.element.querySelectorAll('.strong').length, 6, 'There are 6 divs with strong class');
   });
-  test('Should render Strong for Status Text', async function(assert) {
+  test('Should render Medium for Status Text', async function(assert) {
     await render(hbs`<StrengthMeter @passwordStrength=2 />`);
     assert.equal(
       this.element
@@ -28,8 +29,9 @@ module('Integration | Components | strength-meter', function(hooks) {
       'Medium',
       'initial text is Medium'
     );
+    assert.equal(this.element.querySelectorAll('.medium').length, 4, 'There are 4 divs with medium class');
   });
-  test('Should render Strong for Status Text', async function(assert) {
+  test('Should render Weak for Status Text', async function(assert) {
     await render(hbs`<StrengthMeter @passwordStrength=0 />`);
     assert.equal(
       this.element
@@ -38,5 +40,6 @@ module('Integration | Components | strength-meter', function(hooks) {
       'Weak',
       'initial text is Weak'
     );
+    assert.equal(this.element.querySelectorAll('.weak').length, 1, 'There are 4 divs with weak class');
   });
 });

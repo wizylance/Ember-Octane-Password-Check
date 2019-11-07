@@ -9,6 +9,11 @@ export default class Register extends Controller {
   @tracked showPassword = false;
 
   @action
+  setPasswordText(str) {
+    this.set('passwordText', str);
+  }
+
+  @action
   valChange() {
     const currentPassword = this.get('passwordText');
     const { score: strengthScore } = zxcvbn(currentPassword);
