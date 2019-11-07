@@ -40,6 +40,6 @@ module('Integration | Components | strength-meter', function(hooks) {
       'Weak',
       'initial text is Weak'
     );
-    assert.equal(this.element.querySelectorAll('.weak').length, 1, 'There are 4 divs with weak class');
+    assert.equal(this.element.querySelectorAll('.weak').length, 1, 'There are 1 divs with weak class');
   });
 });
