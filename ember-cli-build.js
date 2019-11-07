@@ -1,24 +1,32 @@
-'use strict';
+/* eslint-env node */
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const nodeSass = require('node-sass'); // loads the version in your package.json
 
 module.exports = function(defaults) {
-  let app = new EmberApp(defaults, {
-    // Add options here
-  });
+	const environment = EmberApp.env();
+	const isProduction = environment === 'production';
 
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
-  //
-  // If you need to use different assets in different
-  // environments, specify an object as the first parameter. That
-  // object's keys should be the environment name and the values
-  // should be the asset to use in that environment.
-  //
-  // If the library that you are including contains AMD or ES6
-  // modules that you would like to import into your application
-  // please specify an object with the list of modules as keys
-  // along with the exports of each module as its value.
+	const app = new EmberApp(defaults, {
+		sassOptions: {
+			includePaths: ['node_modules/materialize-css/sass'],
+			implementation: nodeSass,
+		},
 
-  return app.toTree();
+		intl: {
+			silent: true,
+		},
+
+		hinting: isProduction,
+
+		autoprefixer: {
+			browsers: ['defaults', 'last 3 years', 'IE >= 11'],
+			cascade: false,
+			enabled: isProduction,
+		},
+	});
+
+	app.import('vendor/materialize-css/materialize.js');
+
+	return app.toTree();
 };

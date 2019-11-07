@@ -21,6 +21,9 @@
     "@ember/edition-utils": "^1.1.1",
     "@ember/optional-features": "^1.0.0",
     "@glimmer/component": "^0.14.0-alpha.12",
+    "@glimmer/compiler": "^0.43.0",
+    "@glimmer/inline-precompile": "^1.0.1",
+    "@glimmer/test-helpers": "^0.31.2",
     "babel-eslint": "^10.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
@@ -32,6 +35,7 @@
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-uglify": "^3.0.0",
+    "ember-cli-sass": "^10.0.1",
     "ember-data": "~3.13.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^2.0.0",
@@ -45,9 +49,14 @@
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.9.0"
+    "materialize-css": "^1.0.0-rc.1",
+    "qunit-dom": "^0.9.0",
+    "node-sass": "^4.13.0"
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "zxcvbn": "^4.4.2"
   }
 }
