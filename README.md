@@ -51,7 +51,3 @@ Specify what it takes to deploy your app.
 ### Demo
 
 ![Alt Text](https://media.giphy.com/media/gkM5dm2lmuFYKXZVWb/giphy.gif)
-
-### Notes
-
-At the moment, this project haved used Octane / Glimmer with EmberJS. In the integration test, Glimmer / Octane have some disadvantages and throw a lot of errors so I have used the EmberJS native testing toolkit.
