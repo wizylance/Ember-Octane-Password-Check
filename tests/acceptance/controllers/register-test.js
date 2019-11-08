@@ -33,7 +33,7 @@ module('Acceptance | Controllers | register', function(hooks) {
     assert.equal(
       this.element.querySelectorAll('.weak').length,
       1,
-      'There are 1 divs with weak class'
+      'There are 1 div with weak class'
     );
   });
 
